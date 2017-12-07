@@ -10,9 +10,7 @@ longest = ""
 shortest = ""
 numshort = 0
 
-longA = ''
-
-alphabet.index('b')
+longest = ['']*26
 
 for words in dictionary:
     length = len(words)
