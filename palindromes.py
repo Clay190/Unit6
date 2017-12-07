@@ -6,6 +6,7 @@ file = open('engmix.txt')
 
 for word in file:
     word = word.strip()
-    x = word.reverse()
-    if x == word:
+    x = list(word)
+    x.reverse()
+    if x == list(word):
         print(word)
