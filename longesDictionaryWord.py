@@ -2,13 +2,16 @@
 #11/13/17
 #longestWord.py - finds the middle word
 
-dicctionary = open('engmix.txt')
+dictionary = open('engmix.txt')
 
 total = 0
+word = ''
     
-for w in dicctionary:
-    num = len(w)
-    if num>total:
-        total = w
+for w in dictionary:
+    num = len(w.strip())
+    if len(w.strip())>total:
+        total = num
+        word = w
 
 print(total)
+print(word)
