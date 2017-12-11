@@ -12,10 +12,10 @@ numshort = 0
 
 longest = ['']*26
 
-for words in dictionary:
-    length = len(words)
-    if length > numlong:
-        numlong = length
-        word = words
-        
-print("The longest word is", word, "with", numlong, "characters")
+for i in range(0,26):
+    for words in dictionary:
+        if words[i] == alphabet[i]:
+            length = len(words)
+            if length > numlong:
+                numlong = length
+                longest.append(word)
