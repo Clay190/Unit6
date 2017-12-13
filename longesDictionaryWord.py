@@ -13,5 +13,4 @@ for w in dictionary:
         total = num
         word = w
 
-print(total)
-print(word)
+print(word, "is the longest word")
