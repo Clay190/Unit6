@@ -3,17 +3,21 @@
 #quiz6.py
 
 
-'''
+
 #2
 dictionary = open("engmix.txt")
 total = 0
+l = []
 
 for word in dictionary:
     words = word.strip()
-    if words[0] == 'r':
+    l.append(words)
+    if l[0] == 'r':
         total = total + 1
         
-'''
+print(total)
+        
+
 
 '''
 #3
@@ -27,6 +31,7 @@ for word in dictionary:
         break
 '''
 
+'''
 #4
 dictionary = open("engmix.txt")
 letter = input("Enter a letter")
@@ -39,3 +44,14 @@ for word in dictionary:
         total += 1
         
 print(total)
+'''
+
+'''
+#5
+dictionary = open("engmix.txt")
+myList = []
+for word in dictionary:
+    myList.append(word)
+length = len(myList)
+print(myList[((length//2)-1)])
+'''
