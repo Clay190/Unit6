@@ -2,8 +2,26 @@
 #12/13/17
 #quiz6.py
 
+'''
+dictionary = open("engmix.txt")
+l = []
 
+for word in dictionary:
+    l.append(word.strip())
+    if 'c' in word:
+        l.remove('c')
+        if 'c' in word:
+            l.remove('c')
+            if 'c' in word:
+                l.remove('c')
+                if 'p' in word:
+                    l.remove('p')
+                    if 'p' in word:
+                        print(word)
+#Don't know why it isn't working
 
+'''
+'''
 #2
 dictionary = open("engmix.txt")
 total = 0
@@ -13,11 +31,12 @@ for word in dictionary:
     words = word.strip()
     l.append(words)
     if l[0] == 'r':
-        total = total + 1
+        total += 1
         
 print(total)
-        
 
+#It's close, but it comes out as 0        
+'''
 
 '''
 #3
